@@ -1,15 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import React from 'react'; // Knows how to work with react components
+import ReactDOM from 'react-dom'; // Separate library to render in DOM
 
-import App from './components/app';
-import reducers from './reducers';
+// Create mew component. This component should product some HTML
+const App = () => {
+       return <div>Hi!</div>;
+}
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+// Take this copononent/s generated HTML and put it on onthe page (in the DOM)
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+// App is a class to make an instance it should be wrapped in jsx tags <App />
+ReactDOM.render(<App />, document.querySelector('.container'));
