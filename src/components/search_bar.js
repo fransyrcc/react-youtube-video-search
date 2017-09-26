@@ -1,10 +1,11 @@
-import React, { Component } from 'react'; // Import React and pull off the property Component as a varaible called component
-// Same as saying:
-// const Component = React.Component
+import React, { Component } from 'react'; 
 
 class SearchBar extends Component {
     render() {
-        return <input />;
+        return <input onChange={this.onInputChange} />;
+    }
+    onInputChange(event) {
+        return console.log(event.target.value);
     }
 }
 
