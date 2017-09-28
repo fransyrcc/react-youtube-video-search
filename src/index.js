@@ -14,17 +14,24 @@ class App extends Component {
             videos: [],
             selectedVideo: null
         };
-        YTSearch({ key: API_KEY, term: 'surfboards'}, videos => {
+        this.videoSearch('surfbords');
+
+    }
+    // Define a call back by making a new method videoSearch
+    videoSearch(term) {
+        YTSearch({ key: API_KEY, term: term}, videos => {
             this.setState({ 
                 videos,
                 selectedVideo: videos[0]
             }); // this.setState({ videos: videos }          
         }); 
+
     }
+
     render() {
         return (
             <div>
-                <SearchBar />
+                <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
                 <VideoDetail video={this.state.selectedVideo} /> 
                 <VideoList 
                 onVideoSelect={selectedVideo => this.setState({selectedVideo})} 
