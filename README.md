@@ -1,6 +1,10 @@
-# ReduxSimpleStarter
+# YouTube Video Search example using ReactJS
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This final version follows the tutorial at Udamy: [React-Redux](https://www.udemy.com/react-redux/)
+
+### ReduxSimpleStarter
+This repository uses the starting repo by @StephenGrider
+
 
 ### Getting Started
 
@@ -10,16 +14,11 @@ There are two methods for getting started with this repo.
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+> git clone https://github.com/fransyrcc/react-youtube-video-search.git
+> cd react-youtube-video-search
 > npm install
 > npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+### Final Result
+TBA
